@@ -3,9 +3,9 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            steps {
-                git 'https://github.com/your-repository-url.git'
-            }
+           steps {
+                          git(url: 'https://github.com/ahmedsalah95/framekins.git', credentialsId: 'your-credential-id')
+                      }
         }
 
         stage('Build and Test') {
