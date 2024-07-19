@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Checkout') {
            steps {
-                          git(url: 'https://github.com/ahmedsalah95/framekins.git', credentialsId: 'github-jenkins')
-                      }
+                          git(url: 'https://github.com/ahmedsalah95/framekins.git', credentialsId: 'user-pass')
+                 }
         }
 
         stage('Build and Test') {
