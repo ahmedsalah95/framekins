@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
            steps {
+                          sh 'git --version'
                          git(branch: 'main',url: 'https://github.com/ahmedsalah95/framekins.git', credentialsId: 'user-pass')
                  }
         }
