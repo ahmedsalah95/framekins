@@ -31,6 +31,7 @@ pipeline {
         githubPush()
     }
 
+
     post {
         always {
             archiveArtifacts artifacts: 'target/*.html', allowEmptyArchive: true
